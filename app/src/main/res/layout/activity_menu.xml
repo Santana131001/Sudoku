@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenuActicity"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/LinearLayout1"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/buttonNewGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/buttonInstructions"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonshape"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:text="New Game"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:id="@+id/buttonInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonshape"
+                android:paddingLeft="42dp"
+                android:paddingRight="42dp"
+                android:text="Instructions"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                tools:ignore="OnClick" />
+            <Button
+                android:id="@+id/buttonExit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonInstructions"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonshape"
+                android:paddingLeft="90dp"
+                android:paddingRight="90dp"
+                android:text="Exit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
