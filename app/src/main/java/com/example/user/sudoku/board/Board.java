@@ -71,7 +71,6 @@ public class Board extends BaseAdapter {
     public View getView(final int position, View convertView, ViewGroup parent) {
         final TextView textView;
         if (convertView == null) {
-            // if it's not recycled, initialize some attributes
             textView = new EditText(mContext);
             textView.setLayoutParams(new GridView.LayoutParams(85, 85));
             textView.setPadding(0, 0, 0, 0);
